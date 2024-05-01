@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 const HomeScreen = () => {
-  return (
-    <div>HomeScreen</div>
-  )
-}
+    return (
+        <div className="bg-white box-border  w-full">
+            <div className="w-[82%] flex  mx-36 ">
+              
+            </div>
+        </div>
+    );
+};
 
-export default HomeScreen
+export default HomeScreen;

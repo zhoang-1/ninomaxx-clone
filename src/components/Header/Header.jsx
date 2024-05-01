@@ -1,8 +1,13 @@
 import React from 'react'
+import MenuTop from './MenuSideTop'
+import MenuSideBottom from './MenuSideBottom'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <div>
+        <MenuTop/>
+        <MenuSideBottom/>
+    </div>
   )
 }
 
