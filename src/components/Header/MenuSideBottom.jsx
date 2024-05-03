@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { navbarBottom } from '../../utils/menu';
+import { navbarBottom, navbarBottomRight } from '../../utils/menu';
 import { FaChevronDown, FaAngleRight } from 'react-icons/fa';
+import './MenuSidebottom.module.css'
 const MenuSideBottom = () => {
     const [indexShow, setIndexShow] = useState(0);
     const [indexChildShow, setIndexChildShow] = useState(0);
@@ -19,8 +20,7 @@ const MenuSideBottom = () => {
                 </div>
                 <div className="w-[60%] min-h-[1px] pl-[30px] font-bold text-neutral-600">
                     <ul className="inline-flex list-none ml-0 list-outside m-0 justify-around">
-                        {
-                        navbarBottom?.map((main, i) => (
+                        {navbarBottom?.map((main, i) => (
                             <li
                                 className="inline-block px-[10px] py-[15px] relative  "
                                 onMouseEnter={() => setIndexShow(i + 1)}
@@ -57,7 +57,11 @@ const MenuSideBottom = () => {
                                             >
                                                 {parent?.children?.map((child, ichild) => (
                                                     <li className="relative">
-                                                        <Link to={`${child.link}`} className="header-button1">
+                                                        <Link
+                                                            to={`${child.link}`}
+                                                            key={ichild}
+                                                            className="header-button1"
+                                                        >
                                                             {child.name}
                                                         </Link>
                                                     </li>
@@ -70,7 +74,24 @@ const MenuSideBottom = () => {
                         ))}
                     </ul>
                 </div>
-                <div className="w-[20%]">helolo</div>
+                <div className="w-[20%] text-[20px] font-bold">
+                    <div>
+                        <ul className=" flex justify-end mr-8">
+                            {navbarBottomRight?.map((main, i) => (
+                                <li className=" px-[10px] py-[15px]">
+                                    <Link to={`${main.link}`} key={i}>
+                                        <div className="">
+                                            <span className="toolbar">
+                                                <i className={`${main.name}`}></i>
+                                                <span className="hidden ">{main.hover}</span>
+                                            </span>
+                                        </div>
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     );
