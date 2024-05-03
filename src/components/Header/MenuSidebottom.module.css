@@ -1,0 +1,18 @@
+.toolbar{
+    width: 200px;
+  height: 200px;
+  border: 20px solid transparent;
+  border-top-color: red;
+  border-left-color: red;
+}
+.toolbar:after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    border: 20px solid transparent;
+    border-top-color: red;
+    border-left-color: red;
+  }
