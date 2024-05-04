@@ -144,3 +144,54 @@ export const footerSupport= [
         name:'Chính sách bảo hành', link: 'chinh-sach-bao-hanh'
     },
 ]
+
+export const Socials =[
+    {
+        image: 'https://file.hstatic.net/200000525243/file/fb-icon_949afcbac8944b7b85e279b98c862c22.png',
+        link: 'facebook'
+    },{
+        image: 'https://file.hstatic.net/200000525243/file/zalo-icon_7dc4153cda9b40049362f490486376df.png',
+        link: 'zalo'
+    },{
+        image: 'https://file.hstatic.net/200000525243/file/shoppee-icon_76032a8b4608429cb3a2c57f3631ae60.png',
+        link: 'Tiktok'
+    },{
+        image: 'https://file.hstatic.net/200000525243/file/ins-icon_4a96d8391c4c427cbcbea58e31b26f7e.png',
+        link: 'insatgram'
+    },{
+        image: 'https://file.hstatic.net/200000525243/file/lazada-icon_d9b185362289414084afb71d8a6694d5.png',
+        link: 'lazada'
+    },{
+        image: 'https://file.hstatic.net/200000525243/file/shoppee-icon_76032a8b4608429cb3a2c57f3631ae60.png',
+        link: 'shoppe'
+    },
+]
+export const Paypal =[
+    {
+        image: 'https://file.hstatic.net/200000525243/file/momo_863130512bc541219adad25a6d08dbd0.png',
+        link: 'momo'
+    },{
+        image: 'https://file.hstatic.net/200000525243/file/shoppeepay_b62428242a484dd39b4c9e6f9c26857a.png',
+        link: '#'
+    },{
+        image: 'https://file.hstatic.net/200000525243/file/zalopay_dca1cdc100574c838ebfe4df2f604a0b.png',
+        link: 'zalopay'
+    },{
+        image: 'https://file.hstatic.net/200000525243/file/vnpay_e0e8cf6d8f104c03845e9417cf7192f3.png',
+        link: 'vn-pay'
+    },{
+        image: 'https://file.hstatic.net/200000525243/file/cod_1708d1b12d894a04a1dd4f948e69eeae.png',
+        link: 'CoD'
+    },{
+        image: 'https://file.hstatic.net/200000525243/file/atm_1372dbf1c0c54476ae50a8487f358d2a.png',
+        link: 'ATM'
+    },
+]
+export const slideImages = [
+    {
+      url: '//theme.hstatic.net/200000182297/1000887316/14/ms_banner_img1.jpg?v=514',
+    },
+    {
+      url: '//theme.hstatic.net/200000182297/1000887316/14/ms_banner_img2.jpg?v=514',
+    },
+  ];
